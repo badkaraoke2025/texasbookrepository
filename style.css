@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+body {background-color: #ebebeb;}
+p {font-family: verdana;font-size: 26;color: #ff0800;font-weight: 300;}
+p.important {font-family: verdana;font-size: 26;color: #000000;font-weight: 500;text-decoration: underline}
+figure {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: .5rem;
+}
+.main figure {
+  max-width: min(900px,90%);
+  margin: 0 auto;
+  background: #000;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+}
+.main figure>img {
+  display: block;
+  width: 100%!important;
+  height: auto;
+  border-radius: 0;
+}
+.main figure>img:hover {
+  opacity: .7;
+  transition: opacity .3s ease-in-out;
+}
+figcaption {
+  font-family: verdana,sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #e8e8e8;
+  text-align: center;
+  padding: .6rem .9rem;
+  background: linear-gradient(135deg,#3a3a3a,#1f1f1f);
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+.layout {
+  display: grid;
+  grid-template-columns: 33% 67%;  
+  grid-template-rows: auto 1fr auto;
+  min-height: 300px;
+}
+
+.main-header {
+	grid-column: 1 / -1;
+	font-family: verdana;
+	font-size: 42px;
+	line-height: 52px;
+	color: #ff0800;
+	font-weight: 500;
+	text-align: center; 
+	background: linear-gradient(135deg, #b8b8b8, #e6e6e6);
+	padding: 10px;
+}
+
+.left { background: linear-gradient(to bottom, #d9d9d9, #f2f2f2, #bfbfbf); 
+	font-family: verdana;
+	font-size: 23px;
+	color: #ff0800;
+	text-align: left;
+	list-style-position: inside;
+	vertical-align: middle;
+}
+.left p {color: #ff0800;}
+.left H1 {color: #ff0800; font-family: roboto;font-size: 32px;text-align: center;text-decoration: underline}
+
+.main  { background: #000000; 
+	padding: 10px; 
+}
+.main img {
+  display: block;
+  margin: auto;   /* centers in both directions */
+  width: 50%;
+	border-radius: 35px;
+}
+
+.main img:hover {
+            opacity: 0.7; /* Makes image slightly transparent */
+            transition: opacity 0.3s ease-in-out;
+        }
+
+
+.main-footer {
+ grid-column: 1 / -1;
+	font-family: roboto;
+	font-size: 42px;
+	line-height: 52px;
+	color: #000000;
+	font-weight: 250;
+	text-align: center; 
+	background: linear-gradient(135deg, #b8b8b8, #e6e6e6);
+	padding: 10px;
+	text-decoration: underline;
+}
